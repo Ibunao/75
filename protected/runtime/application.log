@@ -1,0 +1,1283 @@
+2017/07/18 14:03:18 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND customer_id =  AND disabled='false'' at line 1. The SQL statement executed was: SELECT * FROM meet_order WHERE purchase_id =  AND customer_id =  AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Order.php (200)
+in /usr/share/nginx/html/protected/models/Order.php (290)
+2017/07/18 14:03:18 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND customer_id =  AND disabled='false'' at line 1. The SQL statement executed was: SELECT * FROM meet_order WHERE purchase_id =  AND customer_id =  AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Order.php(200): B2cModel->ModelQueryRow('SELECT * FROM m...')
+#3 /usr/share/nginx/html/protected/models/Order.php(290): Order->orderCache('', '')
+#4 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(293): Order->orderItems('', '')
+#5 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionOrderListSheet()
+#6 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('OrderListSheet')
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/Ord...')
+#11 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#12 /usr/share/nginx/html/api.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/api.php?r=api/default/OrderListSheet
+---
+2017/07/26 15:05:03 [error] [php] Undefined index:  (/usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php:381)
+Stack trace:
+#0 /usr/share/nginx/html/framework/web/CController.php(286): DefaultController->runAction()
+#1 /usr/share/nginx/html/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#2 /usr/share/nginx/html/framework/web/CWebApplication.php(282): DefaultController->run()
+#3 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /usr/share/nginx/html/api.php(13): CWebApplication->run()
+REQUEST_URI=/api.php?r=api/default/OrderDetail
+in /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php (381)
+in /usr/share/nginx/html/api.php (13)
+2017/07/26 15:05:57 [error] [php] Undefined index:  (/usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php:381)
+Stack trace:
+#0 /usr/share/nginx/html/framework/web/CController.php(286): DefaultController->runAction()
+#1 /usr/share/nginx/html/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#2 /usr/share/nginx/html/framework/web/CWebApplication.php(282): DefaultController->run()
+#3 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /usr/share/nginx/html/api.php(13): CWebApplication->run()
+REQUEST_URI=/api.php?r=api/default/OrderDetail
+in /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php (381)
+in /usr/share/nginx/html/api.php (13)
+2017/07/26 16:06:58 [error] [php] Undefined index:  (/usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php:381)
+Stack trace:
+#0 /usr/share/nginx/html/framework/web/CController.php(286): DefaultController->runAction()
+#1 /usr/share/nginx/html/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#2 /usr/share/nginx/html/framework/web/CWebApplication.php(282): DefaultController->run()
+#3 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /usr/share/nginx/html/api.php(13): CWebApplication->run()
+REQUEST_URI=/api.php?r=api/default/OrderDetail
+in /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php (381)
+in /usr/share/nginx/html/api.php (13)
+2017/07/26 16:07:20 [error] [php] Undefined index:  (/usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php:381)
+Stack trace:
+#0 /usr/share/nginx/html/framework/web/CController.php(286): DefaultController->runAction()
+#1 /usr/share/nginx/html/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#2 /usr/share/nginx/html/framework/web/CWebApplication.php(282): DefaultController->run()
+#3 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /usr/share/nginx/html/api.php(13): CWebApplication->run()
+REQUEST_URI=/api.php?r=api/default/OrderDetail
+in /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php (381)
+in /usr/share/nginx/html/api.php (13)
+2017/07/26 16:07:48 [error] [php] Undefined index:  (/usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php:381)
+Stack trace:
+#0 /usr/share/nginx/html/framework/web/CController.php(286): DefaultController->runAction()
+#1 /usr/share/nginx/html/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#2 /usr/share/nginx/html/framework/web/CWebApplication.php(282): DefaultController->run()
+#3 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /usr/share/nginx/html/api.php(13): CWebApplication->run()
+REQUEST_URI=/api.php?r=api/default/OrderDetail
+in /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php (381)
+in /usr/share/nginx/html/api.php (13)
+2017/07/26 16:10:12 [error] [php] Undefined index:  (/usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php:381)
+Stack trace:
+#0 /usr/share/nginx/html/framework/web/CController.php(286): DefaultController->runAction()
+#1 /usr/share/nginx/html/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#2 /usr/share/nginx/html/framework/web/CWebApplication.php(282): DefaultController->run()
+#3 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /usr/share/nginx/html/api.php(13): CWebApplication->run()
+REQUEST_URI=/api.php?r=api/default/OrderDetail
+in /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php (381)
+in /usr/share/nginx/html/api.php (13)
+2017/07/26 16:12:52 [error] [php] Undefined index:  (/usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php:381)
+Stack trace:
+#0 /usr/share/nginx/html/framework/web/CController.php(286): DefaultController->runAction()
+#1 /usr/share/nginx/html/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#2 /usr/share/nginx/html/framework/web/CWebApplication.php(282): DefaultController->run()
+#3 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /usr/share/nginx/html/api.php(13): CWebApplication->run()
+REQUEST_URI=/api.php?r=api/default/OrderDetail
+in /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php (381)
+in /usr/share/nginx/html/api.php (13)
+2017/07/26 16:13:18 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'purchase_2017_08'' in /usr/share/nginx/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /usr/share/nginx/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /usr/share/nginx/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /usr/share/nginx/html/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /usr/share/nginx/html/protected/components/ApiController.php(18): CModule->__get('db')
+#5 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(32): ApiController->__construct('default', Object(ApiModule))
+#6 /usr/share/nginx/html/framework/web/CWebApplication.php(359): DefaultController->__construct('default', Object(ApiModule))
+#7 /usr/share/nginx/html/framework/web/CWebApplication.php(338): CWebApplication->createController('default/OrderDe...', Object(ApiModule))
+#8 /usr/share/nginx/html/framework/web/CWebApplication.php(276): CWebApplication->createController('api/default/Ord...')
+#9 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/Ord...')
+#10 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /usr/share/nginx/html/api.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/api.php?r=api/default/OrderDetail
+---
+2017/07/26 16:13:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'purchase_2017_08'' in /usr/share/nginx/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /usr/share/nginx/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /usr/share/nginx/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /usr/share/nginx/html/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /usr/share/nginx/html/protected/components/ApiController.php(18): CModule->__get('db')
+#5 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(32): ApiController->__construct('default', Object(ApiModule))
+#6 /usr/share/nginx/html/framework/web/CWebApplication.php(359): DefaultController->__construct('default', Object(ApiModule))
+#7 /usr/share/nginx/html/framework/web/CWebApplication.php(338): CWebApplication->createController('default/OrderDe...', Object(ApiModule))
+#8 /usr/share/nginx/html/framework/web/CWebApplication.php(276): CWebApplication->createController('api/default/Ord...')
+#9 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/Ord...')
+#10 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /usr/share/nginx/html/api.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/api.php?r=api/default/OrderDetail
+---
+2017/07/26 16:13:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'purchase_2017_08'' in /usr/share/nginx/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /usr/share/nginx/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /usr/share/nginx/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /usr/share/nginx/html/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /usr/share/nginx/html/protected/components/ApiController.php(18): CModule->__get('db')
+#5 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(32): ApiController->__construct('default', Object(ApiModule))
+#6 /usr/share/nginx/html/framework/web/CWebApplication.php(359): DefaultController->__construct('default', Object(ApiModule))
+#7 /usr/share/nginx/html/framework/web/CWebApplication.php(338): CWebApplication->createController('default/OrderDe...', Object(ApiModule))
+#8 /usr/share/nginx/html/framework/web/CWebApplication.php(276): CWebApplication->createController('api/default/Ord...')
+#9 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/Ord...')
+#10 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /usr/share/nginx/html/api.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/api.php?r=api/default/OrderDetail
+---
+2017/07/26 16:13:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'purchase_2017_08'' in /usr/share/nginx/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /usr/share/nginx/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /usr/share/nginx/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /usr/share/nginx/html/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /usr/share/nginx/html/protected/components/ApiController.php(18): CModule->__get('db')
+#5 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(32): ApiController->__construct('default', Object(ApiModule))
+#6 /usr/share/nginx/html/framework/web/CWebApplication.php(359): DefaultController->__construct('default', Object(ApiModule))
+#7 /usr/share/nginx/html/framework/web/CWebApplication.php(338): CWebApplication->createController('default/OrderDe...', Object(ApiModule))
+#8 /usr/share/nginx/html/framework/web/CWebApplication.php(276): CWebApplication->createController('api/default/Ord...')
+#9 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/Ord...')
+#10 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /usr/share/nginx/html/api.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/api.php?r=api/default/OrderDetail
+---
+2017/07/26 16:13:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'purchase_2017_08'' in /usr/share/nginx/html/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /usr/share/nginx/html/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /usr/share/nginx/html/framework/base/CModule.php(394): CDbConnection->init()
+#3 /usr/share/nginx/html/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /usr/share/nginx/html/protected/components/ApiController.php(18): CModule->__get('db')
+#5 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(32): ApiController->__construct('default', Object(ApiModule))
+#6 /usr/share/nginx/html/framework/web/CWebApplication.php(359): DefaultController->__construct('default', Object(ApiModule))
+#7 /usr/share/nginx/html/framework/web/CWebApplication.php(338): CWebApplication->createController('default/OrderDe...', Object(ApiModule))
+#8 /usr/share/nginx/html/framework/web/CWebApplication.php(276): CWebApplication->createController('api/default/Ord...')
+#9 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/Ord...')
+#10 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /usr/share/nginx/html/api.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/api.php?r=api/default/OrderDetail
+---
+2017/07/26 16:13:58 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE purchase_id = 1 AND customer_id = 10000001.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Order.php (334)
+in /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php (359)
+2017/07/26 16:13:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE purchase_id = 1 AND customer_id = 10000001' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Order.php(334): B2cModel->ModelQueryRow('SELECT order_id...')
+#3 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(359): Order->orderItemList('1', '10000001', '2')
+#4 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionOrderDetail()
+#5 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('OrderDetail')
+#9 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/Ord...')
+#10 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /usr/share/nginx/html/api.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/api.php?r=api/default/OrderDetail
+---
+2017/07/26 16:14:00 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE purchase_id = 1 AND customer_id = 10000001.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Order.php (334)
+in /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php (359)
+2017/07/26 16:14:00 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE purchase_id = 1 AND customer_id = 10000001' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Order.php(334): B2cModel->ModelQueryRow('SELECT order_id...')
+#3 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(359): Order->orderItemList('1', '10000001', '1')
+#4 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionOrderDetail()
+#5 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('OrderDetail')
+#9 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/Ord...')
+#10 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /usr/share/nginx/html/api.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/api.php?r=api/default/OrderDetail
+---
+2017/07/26 16:14:14 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Product.php (867)
+in /usr/share/nginx/html/protected/models/Product.php (233)
+2017/07/26 16:14:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Product.php(867): B2cModel->ModelQueryRow('SELECT order_id...')
+#3 /usr/share/nginx/html/protected/models/Product.php(233): Product->getThisOrderedInfo(1, '10000001')
+#4 /usr/share/nginx/html/protected/models/Product.php(117): Product->listSerial('', Array, Array)
+#5 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(117): Product->newitems(Array, '', Array, '', '1')
+#6 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#7 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/ind...')
+#12 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/api.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/api.php?r=api/default/index
+---
+2017/07/26 16:14:18 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Product.php (867)
+in /usr/share/nginx/html/protected/models/Product.php (233)
+2017/07/26 16:14:18 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Product.php(867): B2cModel->ModelQueryRow('SELECT order_id...')
+#3 /usr/share/nginx/html/protected/models/Product.php(233): Product->getThisOrderedInfo(1, '10000001')
+#4 /usr/share/nginx/html/protected/models/Product.php(117): Product->listSerial('', Array, Array)
+#5 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(117): Product->newitems(Array, '', Array, '', '2')
+#6 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#7 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/ind...')
+#12 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/api.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/api.php?r=api/default/index
+---
+2017/07/26 16:14:21 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Product.php (867)
+in /usr/share/nginx/html/protected/models/Product.php (233)
+2017/07/26 16:14:21 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Product.php(867): B2cModel->ModelQueryRow('SELECT order_id...')
+#3 /usr/share/nginx/html/protected/models/Product.php(233): Product->getThisOrderedInfo(1, '10000001')
+#4 /usr/share/nginx/html/protected/models/Product.php(117): Product->listSerial('', Array, Array)
+#5 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(117): Product->newitems(Array, '', Array, '', '3')
+#6 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#7 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/ind...')
+#12 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/api.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/api.php?r=api/default/index
+---
+2017/07/26 16:14:23 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Product.php (867)
+in /usr/share/nginx/html/protected/models/Product.php (233)
+2017/07/26 16:14:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Product.php(867): B2cModel->ModelQueryRow('SELECT order_id...')
+#3 /usr/share/nginx/html/protected/models/Product.php(233): Product->getThisOrderedInfo(1, '10000001')
+#4 /usr/share/nginx/html/protected/models/Product.php(117): Product->listSerial('', Array, Array)
+#5 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(117): Product->newitems(Array, '', Array, '', '4')
+#6 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#7 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/ind...')
+#12 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/api.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/api.php?r=api/default/index
+---
+2017/07/26 16:14:24 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Product.php (867)
+in /usr/share/nginx/html/protected/models/Product.php (233)
+2017/07/26 16:14:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Product.php(867): B2cModel->ModelQueryRow('SELECT order_id...')
+#3 /usr/share/nginx/html/protected/models/Product.php(233): Product->getThisOrderedInfo(1, '10000001')
+#4 /usr/share/nginx/html/protected/models/Product.php(117): Product->listSerial('', Array, Array)
+#5 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(117): Product->newitems(Array, '', Array, '', '5')
+#6 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#7 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/ind...')
+#12 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/api.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/api.php?r=api/default/index
+---
+2017/07/26 16:14:26 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Product.php (867)
+in /usr/share/nginx/html/protected/models/Product.php (233)
+2017/07/26 16:14:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Product.php(867): B2cModel->ModelQueryRow('SELECT order_id...')
+#3 /usr/share/nginx/html/protected/models/Product.php(233): Product->getThisOrderedInfo(1, '10000001')
+#4 /usr/share/nginx/html/protected/models/Product.php(117): Product->listSerial('', Array, Array)
+#5 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(117): Product->newitems(Array, '', Array, '', '6')
+#6 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#7 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/ind...')
+#12 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/api.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/api.php?r=api/default/index
+---
+2017/07/26 16:14:28 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT * FROM meet_order WHERE purchase_id = 1 AND customer_id = 10000001 AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Order.php (200)
+in /usr/share/nginx/html/protected/models/Order.php (290)
+2017/07/26 16:14:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT * FROM meet_order WHERE purchase_id = 1 AND customer_id = 10000001 AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Order.php(200): B2cModel->ModelQueryRow('SELECT * FROM m...')
+#3 /usr/share/nginx/html/protected/models/Order.php(290): Order->orderCache('1', '10000001')
+#4 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(293): Order->orderItems('1', '10000001')
+#5 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionOrderListSheet()
+#6 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('OrderListSheet')
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/Ord...')
+#11 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#12 /usr/share/nginx/html/api.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/api.php?r=api/default/OrderListSheet
+---
+2017/07/26 16:14:28 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT status FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/AppProduct.php (634)
+in /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php (316)
+2017/07/26 16:14:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT status FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/AppProduct.php(634): B2cModel->ModelQueryRow('SELECT status F...')
+#3 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(316): AppProduct->checkThisSubmit('1', '10000001')
+#4 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionCheckSubmit()
+#5 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('CheckSubmit')
+#9 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/Che...')
+#10 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /usr/share/nginx/html/api.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/api.php?r=api/default/CheckSubmit
+---
+2017/07/26 16:14:32 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT * FROM meet_order WHERE purchase_id = 1 AND customer_id = 10000001 AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Order.php (200)
+in /usr/share/nginx/html/protected/models/Order.php (290)
+2017/07/26 16:14:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT * FROM meet_order WHERE purchase_id = 1 AND customer_id = 10000001 AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Order.php(200): B2cModel->ModelQueryRow('SELECT * FROM m...')
+#3 /usr/share/nginx/html/protected/models/Order.php(290): Order->orderCache('1', '10000001')
+#4 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(293): Order->orderItems('1', '10000001')
+#5 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionOrderListSheet()
+#6 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('OrderListSheet')
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/Ord...')
+#11 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#12 /usr/share/nginx/html/api.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/api.php?r=api/default/OrderListSheet
+---
+2017/07/26 16:14:32 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT status FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/AppProduct.php (634)
+in /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php (316)
+2017/07/26 16:14:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT status FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/AppProduct.php(634): B2cModel->ModelQueryRow('SELECT status F...')
+#3 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(316): AppProduct->checkThisSubmit('1', '10000001')
+#4 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionCheckSubmit()
+#5 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('CheckSubmit')
+#9 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/Che...')
+#10 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /usr/share/nginx/html/api.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/api.php?r=api/default/CheckSubmit
+---
+2017/07/26 16:14:35 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT * FROM meet_order WHERE purchase_id = 1 AND customer_id = 10000001 AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Order.php (200)
+in /usr/share/nginx/html/protected/models/Order.php (290)
+2017/07/26 16:14:35 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT * FROM meet_order WHERE purchase_id = 1 AND customer_id = 10000001 AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Order.php(200): B2cModel->ModelQueryRow('SELECT * FROM m...')
+#3 /usr/share/nginx/html/protected/models/Order.php(290): Order->orderCache('1', '10000001')
+#4 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(293): Order->orderItems('1', '10000001')
+#5 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionOrderListSheet()
+#6 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('OrderListSheet')
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/Ord...')
+#11 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#12 /usr/share/nginx/html/api.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/api.php?r=api/default/OrderListSheet
+---
+2017/07/26 16:14:35 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT status FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/AppProduct.php (634)
+in /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php (316)
+2017/07/26 16:14:35 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT status FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/AppProduct.php(634): B2cModel->ModelQueryRow('SELECT status F...')
+#3 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(316): AppProduct->checkThisSubmit('1', '10000001')
+#4 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionCheckSubmit()
+#5 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('CheckSubmit')
+#9 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/Che...')
+#10 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /usr/share/nginx/html/api.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/api.php?r=api/default/CheckSubmit
+---
+2017/07/26 16:14:43 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT * FROM meet_order WHERE purchase_id = 1 AND customer_id = 10000001 AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Order.php (200)
+in /usr/share/nginx/html/protected/models/Order.php (290)
+2017/07/26 16:14:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT * FROM meet_order WHERE purchase_id = 1 AND customer_id = 10000001 AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Order.php(200): B2cModel->ModelQueryRow('SELECT * FROM m...')
+#3 /usr/share/nginx/html/protected/models/Order.php(290): Order->orderCache('1', '10000001')
+#4 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(293): Order->orderItems('1', '10000001')
+#5 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionOrderListSheet()
+#6 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('OrderListSheet')
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/Ord...')
+#11 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#12 /usr/share/nginx/html/api.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/api.php?r=api/default/OrderListSheet
+---
+2017/07/26 16:14:43 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT status FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/AppProduct.php (634)
+in /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php (316)
+2017/07/26 16:14:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT status FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/AppProduct.php(634): B2cModel->ModelQueryRow('SELECT status F...')
+#3 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(316): AppProduct->checkThisSubmit('1', '10000001')
+#4 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionCheckSubmit()
+#5 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('CheckSubmit')
+#9 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/Che...')
+#10 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /usr/share/nginx/html/api.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/api.php?r=api/default/CheckSubmit
+---
+2017/07/26 16:14:47 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT status FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/AppProduct.php (634)
+in /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php (316)
+2017/07/26 16:14:47 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT status FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/AppProduct.php(634): B2cModel->ModelQueryRow('SELECT status F...')
+#3 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(316): AppProduct->checkThisSubmit('1', '10000001')
+#4 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionCheckSubmit()
+#5 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('CheckSubmit')
+#9 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/Che...')
+#10 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /usr/share/nginx/html/api.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/api.php?r=api/default/CheckSubmit
+---
+2017/07/26 16:14:47 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT * FROM meet_order WHERE purchase_id = 1 AND customer_id = 10000001 AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Order.php (200)
+in /usr/share/nginx/html/protected/models/Order.php (290)
+2017/07/26 16:14:47 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT * FROM meet_order WHERE purchase_id = 1 AND customer_id = 10000001 AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Order.php(200): B2cModel->ModelQueryRow('SELECT * FROM m...')
+#3 /usr/share/nginx/html/protected/models/Order.php(290): Order->orderCache('1', '10000001')
+#4 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(293): Order->orderItems('1', '10000001')
+#5 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionOrderListSheet()
+#6 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('OrderListSheet')
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/Ord...')
+#11 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#12 /usr/share/nginx/html/api.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/api.php?r=api/default/OrderListSheet
+---
+2017/07/26 16:14:52 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT * FROM meet_order WHERE purchase_id = 1 AND customer_id = 10000001 AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Order.php (200)
+in /usr/share/nginx/html/protected/models/Order.php (290)
+2017/07/26 16:14:52 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT * FROM meet_order WHERE purchase_id = 1 AND customer_id = 10000001 AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Order.php(200): B2cModel->ModelQueryRow('SELECT * FROM m...')
+#3 /usr/share/nginx/html/protected/models/Order.php(290): Order->orderCache('1', '10000001')
+#4 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(293): Order->orderItems('1', '10000001')
+#5 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionOrderListSheet()
+#6 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('OrderListSheet')
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/Ord...')
+#11 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#12 /usr/share/nginx/html/api.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/api.php?r=api/default/OrderListSheet
+---
+2017/07/26 16:14:52 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT status FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/AppProduct.php (634)
+in /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php (316)
+2017/07/26 16:14:52 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT status FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/AppProduct.php(634): B2cModel->ModelQueryRow('SELECT status F...')
+#3 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(316): AppProduct->checkThisSubmit('1', '10000001')
+#4 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionCheckSubmit()
+#5 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('CheckSubmit')
+#9 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/Che...')
+#10 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /usr/share/nginx/html/api.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/api.php?r=api/default/CheckSubmit
+---
+2017/07/26 16:14:59 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Product.php (867)
+in /usr/share/nginx/html/protected/models/Product.php (233)
+2017/07/26 16:14:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Product.php(867): B2cModel->ModelQueryRow('SELECT order_id...')
+#3 /usr/share/nginx/html/protected/models/Product.php(233): Product->getThisOrderedInfo(1, '10000001')
+#4 /usr/share/nginx/html/protected/models/Product.php(117): Product->listSerial('', Array, Array)
+#5 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(117): Product->newitems(Array, '', Array, '', '1')
+#6 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#7 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/ind...')
+#12 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/api.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/api.php?r=api/default/index
+---
+2017/07/26 16:15:01 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Product.php (867)
+in /usr/share/nginx/html/protected/models/Product.php (233)
+2017/07/26 16:15:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Product.php(867): B2cModel->ModelQueryRow('SELECT order_id...')
+#3 /usr/share/nginx/html/protected/models/Product.php(233): Product->getThisOrderedInfo(1, '10000001')
+#4 /usr/share/nginx/html/protected/models/Product.php(117): Product->listSerial('', Array, Array)
+#5 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(117): Product->newitems(Array, '', Array, '', '2')
+#6 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#7 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/ind...')
+#12 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/api.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/api.php?r=api/default/index
+---
+2017/07/26 16:15:02 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Product.php (867)
+in /usr/share/nginx/html/protected/models/Product.php (233)
+2017/07/26 16:15:02 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Product.php(867): B2cModel->ModelQueryRow('SELECT order_id...')
+#3 /usr/share/nginx/html/protected/models/Product.php(233): Product->getThisOrderedInfo(1, '10000001')
+#4 /usr/share/nginx/html/protected/models/Product.php(117): Product->listSerial('', Array, Array)
+#5 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(117): Product->newitems(Array, '', Array, '', '3')
+#6 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#7 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/ind...')
+#12 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/api.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/api.php?r=api/default/index
+---
+2017/07/26 16:15:05 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Product.php (867)
+in /usr/share/nginx/html/protected/models/Product.php (233)
+2017/07/26 16:15:05 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Product.php(867): B2cModel->ModelQueryRow('SELECT order_id...')
+#3 /usr/share/nginx/html/protected/models/Product.php(233): Product->getThisOrderedInfo(1, '10000001')
+#4 /usr/share/nginx/html/protected/models/Product.php(117): Product->listSerial('', Array, Array)
+#5 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(117): Product->newitems(Array, '', Array, '', '4')
+#6 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#7 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/ind...')
+#12 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/api.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/api.php?r=api/default/index
+---
+2017/07/26 16:15:08 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Product.php (867)
+in /usr/share/nginx/html/protected/models/Product.php (233)
+2017/07/26 16:15:08 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Product.php(867): B2cModel->ModelQueryRow('SELECT order_id...')
+#3 /usr/share/nginx/html/protected/models/Product.php(233): Product->getThisOrderedInfo(1, '10000001')
+#4 /usr/share/nginx/html/protected/models/Product.php(117): Product->listSerial('', Array, Array)
+#5 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(117): Product->newitems(Array, '', Array, '', '5')
+#6 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#7 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/ind...')
+#12 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/api.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/api.php?r=api/default/index
+---
+2017/07/26 16:15:10 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Product.php (867)
+in /usr/share/nginx/html/protected/models/Product.php (233)
+2017/07/26 16:15:10 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Product.php(867): B2cModel->ModelQueryRow('SELECT order_id...')
+#3 /usr/share/nginx/html/protected/models/Product.php(233): Product->getThisOrderedInfo(1, '10000001')
+#4 /usr/share/nginx/html/protected/models/Product.php(117): Product->listSerial('', Array, Array)
+#5 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(117): Product->newitems(Array, '', Array, '', '6')
+#6 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#7 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/ind...')
+#12 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/api.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/api.php?r=api/default/index
+---
+2017/07/26 16:15:14 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Product.php (867)
+in /usr/share/nginx/html/protected/models/Product.php (233)
+2017/07/26 16:15:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Product.php(867): B2cModel->ModelQueryRow('SELECT order_id...')
+#3 /usr/share/nginx/html/protected/models/Product.php(233): Product->getThisOrderedInfo(1, '10000001')
+#4 /usr/share/nginx/html/protected/models/Product.php(117): Product->listSerial('', Array, Array)
+#5 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(117): Product->newitems(Array, '', Array, '', 1)
+#6 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#7 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/ind...')
+#12 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/api.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/api.php?r=api/default/index
+---
+2017/07/26 16:15:17 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Product.php (867)
+in /usr/share/nginx/html/protected/models/Product.php (233)
+2017/07/26 16:15:17 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Product.php(867): B2cModel->ModelQueryRow('SELECT order_id...')
+#3 /usr/share/nginx/html/protected/models/Product.php(233): Product->getThisOrderedInfo(1, '10000001')
+#4 /usr/share/nginx/html/protected/models/Product.php(117): Product->listSerial('', Array, Array)
+#5 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(117): Product->newitems(Array, '', Array, '', '7')
+#6 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#7 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/ind...')
+#12 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/api.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/api.php?r=api/default/index
+---
+2017/07/26 16:15:18 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Product.php (867)
+in /usr/share/nginx/html/protected/models/Product.php (233)
+2017/07/26 16:15:18 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Product.php(867): B2cModel->ModelQueryRow('SELECT order_id...')
+#3 /usr/share/nginx/html/protected/models/Product.php(233): Product->getThisOrderedInfo(1, '10000001')
+#4 /usr/share/nginx/html/protected/models/Product.php(117): Product->listSerial('', Array, Array)
+#5 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(117): Product->newitems(Array, '', Array, '', 1)
+#6 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#7 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/ind...')
+#12 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/api.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/api.php?r=api/default/index
+---
+2017/07/26 16:15:19 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Product.php (867)
+in /usr/share/nginx/html/protected/models/Product.php (233)
+2017/07/26 16:15:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Product.php(867): B2cModel->ModelQueryRow('SELECT order_id...')
+#3 /usr/share/nginx/html/protected/models/Product.php(233): Product->getThisOrderedInfo(1, '10000001')
+#4 /usr/share/nginx/html/protected/models/Product.php(117): Product->listSerial('', Array, Array)
+#5 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(117): Product->newitems(Array, '', Array, '', 1)
+#6 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#7 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/ind...')
+#12 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/api.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/api.php?r=api/default/index
+---
+2017/07/26 16:15:20 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Product.php (867)
+in /usr/share/nginx/html/protected/models/Product.php (233)
+2017/07/26 16:15:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Product.php(867): B2cModel->ModelQueryRow('SELECT order_id...')
+#3 /usr/share/nginx/html/protected/models/Product.php(233): Product->getThisOrderedInfo(1, '10000001')
+#4 /usr/share/nginx/html/protected/models/Product.php(117): Product->listSerial('', Array, Array)
+#5 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(117): Product->newitems(Array, '', Array, '', 1)
+#6 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#7 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/ind...')
+#12 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/api.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/api.php?r=api/default/index
+---
+2017/07/26 16:15:21 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Product.php (867)
+in /usr/share/nginx/html/protected/models/Product.php (233)
+2017/07/26 16:15:21 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Product.php(867): B2cModel->ModelQueryRow('SELECT order_id...')
+#3 /usr/share/nginx/html/protected/models/Product.php(233): Product->getThisOrderedInfo(1, '10000001')
+#4 /usr/share/nginx/html/protected/models/Product.php(117): Product->listSerial('', Array, Array)
+#5 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(117): Product->newitems(Array, '', Array, '', 1)
+#6 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#7 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/ind...')
+#12 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/api.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/api.php?r=api/default/index
+---
+2017/07/26 16:15:22 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Product.php (867)
+in /usr/share/nginx/html/protected/models/Product.php (233)
+2017/07/26 16:15:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Product.php(867): B2cModel->ModelQueryRow('SELECT order_id...')
+#3 /usr/share/nginx/html/protected/models/Product.php(233): Product->getThisOrderedInfo(1, '10000001')
+#4 /usr/share/nginx/html/protected/models/Product.php(117): Product->listSerial('', Array, Array)
+#5 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(117): Product->newitems(Array, '', Array, '', 1)
+#6 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#7 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/ind...')
+#12 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/api.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/api.php?r=api/default/index
+---
+2017/07/26 16:15:31 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Product.php (867)
+in /usr/share/nginx/html/protected/models/Product.php (233)
+2017/07/26 16:15:31 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Product.php(867): B2cModel->ModelQueryRow('SELECT order_id...')
+#3 /usr/share/nginx/html/protected/models/Product.php(233): Product->getThisOrderedInfo(1, '10000001')
+#4 /usr/share/nginx/html/protected/models/Product.php(117): Product->listSerial('', Array, Array)
+#5 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(117): Product->newitems(Array, '', Array, '', '8')
+#6 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#7 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/ind...')
+#12 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/api.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/api.php?r=api/default/index
+---
+2017/07/26 16:15:44 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Product.php (867)
+in /usr/share/nginx/html/protected/models/Product.php (233)
+2017/07/26 16:15:44 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Product.php(867): B2cModel->ModelQueryRow('SELECT order_id...')
+#3 /usr/share/nginx/html/protected/models/Product.php(233): Product->getThisOrderedInfo(1, '10000001')
+#4 /usr/share/nginx/html/protected/models/Product.php(117): Product->listSerial('', Array, Array)
+#5 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(117): Product->newitems(Array, '', Array, '', '9')
+#6 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#7 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/ind...')
+#12 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/api.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/api.php?r=api/default/index
+---
+2017/07/26 16:15:45 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Product.php (867)
+in /usr/share/nginx/html/protected/models/Product.php (233)
+2017/07/26 16:15:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Product.php(867): B2cModel->ModelQueryRow('SELECT order_id...')
+#3 /usr/share/nginx/html/protected/models/Product.php(233): Product->getThisOrderedInfo(1, '10000001')
+#4 /usr/share/nginx/html/protected/models/Product.php(117): Product->listSerial('', Array, Array)
+#5 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(117): Product->newitems(Array, '', Array, '', 1)
+#6 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#7 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/ind...')
+#12 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/api.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/api.php?r=api/default/index
+---
+2017/07/26 16:15:49 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Product.php (867)
+in /usr/share/nginx/html/protected/models/Product.php (233)
+2017/07/26 16:15:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Product.php(867): B2cModel->ModelQueryRow('SELECT order_id...')
+#3 /usr/share/nginx/html/protected/models/Product.php(233): Product->getThisOrderedInfo(1, '10000001')
+#4 /usr/share/nginx/html/protected/models/Product.php(117): Product->listSerial('', Array, Array)
+#5 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(117): Product->newitems(Array, '', Array, '', 1)
+#6 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#7 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/ind...')
+#12 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/api.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/api.php?r=api/default/index
+---
+2017/07/26 16:15:50 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Product.php (867)
+in /usr/share/nginx/html/protected/models/Product.php (233)
+2017/07/26 16:15:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Product.php(867): B2cModel->ModelQueryRow('SELECT order_id...')
+#3 /usr/share/nginx/html/protected/models/Product.php(233): Product->getThisOrderedInfo(1, '10000001')
+#4 /usr/share/nginx/html/protected/models/Product.php(117): Product->listSerial('', Array, Array)
+#5 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(117): Product->newitems(Array, '', Array, '', '10')
+#6 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#7 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/ind...')
+#12 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/api.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/api.php?r=api/default/index
+---
+2017/07/26 16:15:51 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Product.php (867)
+in /usr/share/nginx/html/protected/models/Product.php (233)
+2017/07/26 16:15:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Product.php(867): B2cModel->ModelQueryRow('SELECT order_id...')
+#3 /usr/share/nginx/html/protected/models/Product.php(233): Product->getThisOrderedInfo(1, '10000001')
+#4 /usr/share/nginx/html/protected/models/Product.php(117): Product->listSerial('', Array, Array)
+#5 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(117): Product->newitems(Array, '', Array, '', 1)
+#6 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#7 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/ind...')
+#12 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/api.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/api.php?r=api/default/index
+---
+2017/07/26 16:15:54 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Product.php (867)
+in /usr/share/nginx/html/protected/models/Product.php (233)
+2017/07/26 16:15:54 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Product.php(867): B2cModel->ModelQueryRow('SELECT order_id...')
+#3 /usr/share/nginx/html/protected/models/Product.php(233): Product->getThisOrderedInfo(1, '10000001')
+#4 /usr/share/nginx/html/protected/models/Product.php(117): Product->listSerial('', Array, Array)
+#5 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(117): Product->newitems(Array, '', Array, '', 1)
+#6 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#7 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/ind...')
+#12 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/api.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/api.php?r=api/default/index
+---
+2017/07/26 16:15:55 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Product.php (867)
+in /usr/share/nginx/html/protected/models/Product.php (233)
+2017/07/26 16:15:55 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Product.php(867): B2cModel->ModelQueryRow('SELECT order_id...')
+#3 /usr/share/nginx/html/protected/models/Product.php(233): Product->getThisOrderedInfo(1, '10000001')
+#4 /usr/share/nginx/html/protected/models/Product.php(117): Product->listSerial('', Array, Array)
+#5 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(117): Product->newitems(Array, '', Array, '', 1)
+#6 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#7 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/ind...')
+#12 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/api.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/api.php?r=api/default/index
+---
+2017/07/26 16:15:55 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Product.php (867)
+in /usr/share/nginx/html/protected/models/Product.php (233)
+2017/07/26 16:15:56 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Product.php(867): B2cModel->ModelQueryRow('SELECT order_id...')
+#3 /usr/share/nginx/html/protected/models/Product.php(233): Product->getThisOrderedInfo(1, '10000001')
+#4 /usr/share/nginx/html/protected/models/Product.php(117): Product->listSerial('', Array, Array)
+#5 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(117): Product->newitems(Array, '', Array, '', 1)
+#6 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#7 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/ind...')
+#12 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/api.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/api.php?r=api/default/index
+---
+2017/07/26 16:15:56 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Product.php (867)
+in /usr/share/nginx/html/protected/models/Product.php (233)
+2017/07/26 16:15:56 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Product.php(867): B2cModel->ModelQueryRow('SELECT order_id...')
+#3 /usr/share/nginx/html/protected/models/Product.php(233): Product->getThisOrderedInfo(1, '10000001')
+#4 /usr/share/nginx/html/protected/models/Product.php(117): Product->listSerial('', Array, Array)
+#5 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(117): Product->newitems(Array, '', Array, '', 1)
+#6 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#7 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/ind...')
+#12 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/api.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/api.php?r=api/default/index
+---
+2017/07/26 16:15:57 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Product.php (867)
+in /usr/share/nginx/html/protected/models/Product.php (233)
+2017/07/26 16:15:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Product.php(867): B2cModel->ModelQueryRow('SELECT order_id...')
+#3 /usr/share/nginx/html/protected/models/Product.php(233): Product->getThisOrderedInfo(1, '10000001')
+#4 /usr/share/nginx/html/protected/models/Product.php(117): Product->listSerial('', Array, Array)
+#5 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(117): Product->newitems(Array, '', Array, '', 1)
+#6 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#7 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/ind...')
+#12 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/api.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/api.php?r=api/default/index
+---
+2017/07/26 16:15:57 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Product.php (867)
+in /usr/share/nginx/html/protected/models/Product.php (233)
+2017/07/26 16:15:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT order_id FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Product.php(867): B2cModel->ModelQueryRow('SELECT order_id...')
+#3 /usr/share/nginx/html/protected/models/Product.php(233): Product->getThisOrderedInfo(1, '10000001')
+#4 /usr/share/nginx/html/protected/models/Product.php(117): Product->listSerial('', Array, Array)
+#5 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(117): Product->newitems(Array, '', Array, '', 1)
+#6 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#7 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('index')
+#11 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/ind...')
+#12 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/api.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/api.php?r=api/default/index
+---
+2017/07/26 16:15:57 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT * FROM meet_order WHERE purchase_id = 1 AND customer_id = 10000001 AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Order.php (200)
+in /usr/share/nginx/html/protected/models/Order.php (290)
+2017/07/26 16:15:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT * FROM meet_order WHERE purchase_id = 1 AND customer_id = 10000001 AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Order.php(200): B2cModel->ModelQueryRow('SELECT * FROM m...')
+#3 /usr/share/nginx/html/protected/models/Order.php(290): Order->orderCache('1', '10000001')
+#4 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(293): Order->orderItems('1', '10000001')
+#5 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionOrderListSheet()
+#6 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('OrderListSheet')
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/Ord...')
+#11 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#12 /usr/share/nginx/html/api.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/api.php?r=api/default/OrderListSheet
+---
+2017/07/26 16:15:57 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT status FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/AppProduct.php (634)
+in /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php (316)
+2017/07/26 16:15:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT status FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/AppProduct.php(634): B2cModel->ModelQueryRow('SELECT status F...')
+#3 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(316): AppProduct->checkThisSubmit('1', '10000001')
+#4 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionCheckSubmit()
+#5 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('CheckSubmit')
+#9 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/Che...')
+#10 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /usr/share/nginx/html/api.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/api.php?r=api/default/CheckSubmit
+---
+2017/07/26 16:16:02 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT * FROM meet_order WHERE purchase_id = 1 AND customer_id = 10000001 AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/Order.php (200)
+in /usr/share/nginx/html/protected/models/Order.php (290)
+2017/07/26 16:16:02 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT * FROM meet_order WHERE purchase_id = 1 AND customer_id = 10000001 AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/Order.php(200): B2cModel->ModelQueryRow('SELECT * FROM m...')
+#3 /usr/share/nginx/html/protected/models/Order.php(290): Order->orderCache('1', '10000001')
+#4 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(293): Order->orderItems('1', '10000001')
+#5 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionOrderListSheet()
+#6 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#8 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('OrderListSheet')
+#10 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/Ord...')
+#11 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#12 /usr/share/nginx/html/api.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/api.php?r=api/default/OrderListSheet
+---
+2017/07/26 16:16:02 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT status FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'.
+in /usr/share/nginx/html/protected/components/B2cModel.php (51)
+in /usr/share/nginx/html/protected/models/AppProduct.php (634)
+in /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php (316)
+2017/07/26 16:16:02 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'purchase_2017_08.meet_order' doesn't exist. The SQL statement executed was: SELECT status FROM meet_order WHERE customer_id='10000001' AND purchase_id='1' AND disabled='false'' in /usr/share/nginx/html/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /usr/share/nginx/html/framework/db/CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /usr/share/nginx/html/protected/components/B2cModel.php(51): CDbCommand->queryRow()
+#2 /usr/share/nginx/html/protected/models/AppProduct.php(634): B2cModel->ModelQueryRow('SELECT status F...')
+#3 /usr/share/nginx/html/protected/modules/api/controllers/DefaultController.php(316): AppProduct->checkThisSubmit('1', '10000001')
+#4 /usr/share/nginx/html/framework/web/actions/CInlineAction.php(49): DefaultController->actionCheckSubmit()
+#5 /usr/share/nginx/html/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /usr/share/nginx/html/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /usr/share/nginx/html/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /usr/share/nginx/html/framework/web/CWebApplication.php(282): CController->run('CheckSubmit')
+#9 /usr/share/nginx/html/framework/web/CWebApplication.php(141): CWebApplication->runController('api/default/Che...')
+#10 /usr/share/nginx/html/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /usr/share/nginx/html/api.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/api.php?r=api/default/CheckSubmit
+---
